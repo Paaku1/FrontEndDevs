@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        body {
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/753px-Google_%22G%22_Logo.svg.png');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
-        }
-    </style>
     <title>Google</title>
     <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/753px-Google_%22G%22_Logo.svg.png">
-    ">
+    <style> 
+        table,th,td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            border-style: ridge;
+        }
+        th,td{
+            background-color: aquamarine;
+        }
+    </style>
     <body>
-        <h1>
-            hello
-        </h1>
+        <table>
+            <caption>Info</caption>
+            <colgroup>
+                <col span="1" style="background-color:red">
+                <col style="background-color:yellow">
+            </colgroup>
+            <thead>
+                <tr><!-- header -->
+                    <th>Sn.No</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><!-- values -->
+                    <td>1</td>
+                    <td>Karthikeyan</td>
+                    <td>Thiruvallur</td>
+                </tr>
+                <tr><!-- values -->
+                    <td>2</td>
+                    <td>Paaku</td>
+                    <td>ICF</td>
+                </tr>
+            </tbody>
+            
+        </table>
     </body>
 </html>
