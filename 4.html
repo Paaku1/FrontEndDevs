@@ -10,9 +10,6 @@
             justify-content: center;
             font-size: x-large;
         }
-        h1{
-            font-size: larger;
-        }
         header{
             justify-content: center;
             display: flex;
@@ -21,31 +18,79 @@
         }
         .radio{
             font-size: 20px;
+            padding-left: 10%;
         }
+        .head{
+            text-align: center;
+            font-size:40px;
+            background-color: antiquewhite;
+        }
+        #link{
+            text-align: center;
+            font-size: large;
+        }
+        #iframe{
+            text-align: center;
+        }
+        footer{
+            justify-content: center;
+            display: flex;
+            font-size: xx-large;
+            font-style: oblique;
+        }
+        .check{
+            padding-left: 10%;
+        }
+
     </style>
     <title>Forms</title>
-    <header >Registration Form<br><br></header>
+    <header><br>Registration Form<br></header>
     <body>
-        <h1 align="center">Welcome My Friend !</h1>
+        <h1 class="head">
+            <hr >Welcome My Friend !<hr>
+        </h1>
         <div class="center_forms">
-            <l>
+            <form>
                 <label>First name:
                     <input type="text" name="First name" placeholder="enter first name"><br><br></label>
                 <label>Last name:
                     <input type="text" name="First name" placeholder="enter last name"><br></label>
-                <p>Year Of Studying:</p>
+                <p><u>Year Of Studying:</u></p>
                 <div class="radio">
-                    <input type="radio" id="I"></label> 
-                        <label type="I">I
-                    <input type="radio" id="II"></label>
+                    <input type="radio" id="I" name="Year" value="I" ></label> 
+                        <label type="I">I &nbsp;&nbsp;
+                    <input type="radio" id="II" name="Year" value="II"></label>
                         <label for="II">II<br><br>
-                    <input type="radio" id="III"></label>
+                    <input type="radio" id="III" name="Year" value="III"></label>
                         <label for="III">III
-                    <input type="radio" id="IV"></label>
-                        </label> <label for="IV">IV<br><br>
+                    <input type="radio" id="IV" name="Year" value="IV"></label>
+                        </label> <label for="IV">IV<br>
                 </div>
-                        
+                <p><u>Programming Language Known</u></p>
+                <div class="check">
+                    <input type="checkbox" id="1"name="C">
+                    <label>C<br></label>
+                    <input type="checkbox" id="1"name="JAVA">
+                    <label>Java<br></label>
+                    <input type="checkbox" id="1"name="Python">
+                    <label>Python<br></label>
+                    <input type="checkbox" id="1"name="PHP">
+                    <label>PHP<br></label>
+                    <input type="checkbox" id="1"name="HTML">
+                    <label>HTML5<br></label>
+                    <input type="checkbox" id="1"name="CSS3">
+                    <label>CSS3<br></label>
+                    <input type="checkbox" id="1"name="JAVASCRIPT">
+                    <label>JavaScript<br></label>
+                </div>
             </form>
         </div>
+        <nav id="link">
+            <a href="/html/" target="_blank">HTML</a> |
+            <a href="/css/">CSS</a> |
+            <a href="/js/">JavaScript</a> |
+            <a href="/python/">Python</a>
+        </nav>
     </body>
+    <footer>Thanks</footer>
 </html>
