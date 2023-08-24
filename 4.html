@@ -42,6 +42,12 @@
             padding-left: 10%;
             font-size: large;
         }
+        .select{
+            line-height: 2%;
+        }
+        .text{
+            text-align-last: justify;
+        }
 
     </style>
     <title>Forms</title>
@@ -52,10 +58,14 @@
         </h1>
         <div class="center_forms">
             <form>
-                <label>First name:</label>
-                <input type="text" name="First name" placeholder="enter first name"><br><br>
-                <label>Last name:</label>
-                <input type="text" name="First name" placeholder="enter last name"><br>
+                <div class="text">
+                    <label>First name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="First name" placeholder="enter first name"><br>
+                    <label>Last name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="First name" placeholder="enter last name"><br>
+                    <label>Register Number:</label>
+                    <input type="text" name="Register Number" placeholder="enter Register Number"><br>
+                </div>
                 <p><u>Year Of Studying:</u></p>
                 <div class="radio">
                     <input type="radio" id="I" name="Year" value="I" >
@@ -66,6 +76,16 @@
                     <label for="III">III</label>
                     <input type="radio" id="IV" name="Year" value="IV">
                     <label for="IV">IV<br></label>
+                </div>
+                <div class="select">
+                    <p for="Department"><u>Department</u></p>
+                    <select id="Department" name="Department">
+                        <option value="cse">Computer Science Engineering</option>
+                        <option value="IT" selected>Information Technology</option>
+                        <option value="AIML">Artificial Intelligence & Machine Learning</option>
+                        <option value="csd">Computer Science and Design</option>
+                        <option value="FT">Food Technology</option>
+                    </select>
                 </div>
                 <p><u>Programming Languages</u></p>
                 <div class="check">
@@ -82,14 +102,22 @@
                     <input type="checkbox" id="1"name="CSS3">
                     <label>CSS3<br></label>
                     <input type="checkbox" id="1"name="JAVASCRIPT">
-                    <label>JavaScript<br><br></label>
+                    <label>JavaScript<br></label>
+                    <label>&nbsp;Others</label>
+                    <input type="text" name="Others" placeholder=Enter>
                 </div>
+                <div class="area">
+                    <p><u>Residential Address</u></p>
+                    <textarea name="Address" placeholder="Enter Address" rows="5" cols="45">
+                    </textarea>
+                </div>
+                
                 <input type="submit" value="   Submit   ">
                 <input type="submit" value="   Reset   ">
             </form>
         </div>
         <nav id="link">
-            <a href="/html/" target="_blank">HTML</a> |
+            <a href="https://www.google.com" target="_parent">Google</a> |
             <a href="/css/">CSS</a> |
             <a href="/js/">JavaScript</a> |
             <a href="/python/">Python</a>
