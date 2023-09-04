@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body{
+        background-color: antiquewhite;
+        background-image:url('https://upload.wikimedia.org/wikipedia/commons/f/f3/Rajalakshmi_Engineering_College_%28REC%29_Chennai_Logo.jpg?20140804151214');
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+    li{
+        font-style: italic;
+        color:blueviolet ;
+    }
+    .scroll{
+        background-color: rgb(100, 230, 113);
+        height: 50px;
+        overflow: hidden;
+        border: 1px rgb(255, 0, 0) solid;
+    }
+    .scroll p{
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        margin: 0; 
+        line-height: 50px; 
+        text-align: center; /* Starting position */ 
+        transform:translateX(100%); /* Apply animation to this element */ 
+        animation: scroll 15s linear infinite;
+    }
+    @keyframes scroll {
+    0%   {
+    transform: translateX(30%); 		
+    }
+    100% {
+    transform: translateX(-100%); 
+    }
+}
+
+</style>
+<head>
+    <title>Rajalakshmi Engineering College</title>
+</head>
+<body class="show">
+    <h1>Rajalakshmi Engineering College </h1>
+    <p>Rajalakshmi Engineering College,<br>Rajalakshmi Nagar Thandalam,<br>Chennai - 602 105.</p>
+    <h2>Courses</h2>
+    <ul>
+        <li>AERONAUTICAL ENGINEERING</li>
+        <li>AUTOMOBILE ENGINEERING</li>
+        <li>BIOMEDICAL ENGINEERING</li>
+        <li>BIOTECHNOLOGY</li>
+        <li>CHEMICAL ENGINEERING</li>
+        <li>CIVIL ENGINEERING</li>
+        <li>COMPUTER SCIENCE & ENGINEERING</li>
+        <li>COMPUTER SCIENCE & ENGINEERING</li>
+        <li>COMPUTER SCIENCE & BUSINESS SYSTEMS</li>
+        <li>COMPUTER SCIENCE & DESIGN</li>
+        <li>ELECTRICAL & ELECTRONICS ENGINEERING</li>
+        <li>ELECTRONICS & COMMUNICATION ENGINEERING</li>
+        <li>FOOD TECHNOLOGY</li>
+        <li>INFORMATION TECHNOLOGY</li>
+        <li>ARTIFICIAL INTELLIGENCE & MACHINE LEARNING</li>
+        <li>ARTIFICIAL INTELLIGENCE & DATA SCIENCE</li>
+        <li>MECHANICAL ENGINEERING</li>
+        <li>MECHATRONICS ENGINEERING</li>
+        <li>ROBOTICS & AUTOMATION</li>
+        <li>HUMANITIES & SCIENCES</li>
+        <li>MANAGEMENT STUDIES</li>
+        
+    </ul>
+    <div class="scroll">
+        <p ><b>!! IMPORTANT !! <i>REC</i> !! IMPORTANT !!</b></p>
+    </div>
+</body>
+</html>
