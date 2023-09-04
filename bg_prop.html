@@ -8,13 +8,13 @@
         background-position-x: center;
     }
     li{
-        font-style: italic;
+        font-style:oblique;
         color:blueviolet ;
     }
     .scroll{
         background-color: rgb(100, 230, 113);
         height: 50px;
-        overflow: hidden;
+        overflow:auto;
         border: 1px rgb(255, 0, 0) solid;
     }
     .scroll p{
@@ -28,19 +28,19 @@
         animation: scroll 15s linear infinite;
     }
     @keyframes scroll {
-    0%   {
-    transform: translateX(30%); 		
+        0%{
+            transform: translateX(30%); 		
+        }
+        100% {
+            transform: translateX(-100%); 
+        }
     }
-    100% {
-    transform: translateX(-100%); 
-    }
-}
 
 </style>
 <head>
     <title>Rajalakshmi Engineering College</title>
 </head>
-<body class="show">
+<body>
     <h1>Rajalakshmi Engineering College </h1>
     <p>Rajalakshmi Engineering College,<br>Rajalakshmi Nagar Thandalam,<br>Chennai - 602 105.</p>
     <h2>Courses</h2>
