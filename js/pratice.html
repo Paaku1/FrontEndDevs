@@ -6,9 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="document">Document</h1>
-    <script src="4.js">
-        document.getElementById("document");
-    </script>
+    <div >
+        Enter First Number : <br>
+        <input type="text" id="num1" name="TextBox1">
+        <br>
+        Enter Second Number : <br>
+        <input type="text" id="num2" name="TextBox2">
+        <br>
+        Result : <br>
+        <input type="text" id="result" name="TextBox3">
+        <br>
+    <input type="button" name="click" value="Display Result" onclick="sum()">
+    </div>
 </body>
+<script type="text/javascript">
+    function sum() {
+    var x =parseInt(document.getElementById("num1").value);
+    var y =parseInt(document.getElementById("num2").value);
+    var c = x+y;
+    document.getElementById("result").innerHTML = c;
+    }
+</script>
+<noscript>Please enable JavaScript to view the</noscript>
 </html>
