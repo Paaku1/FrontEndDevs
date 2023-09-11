@@ -1,5 +1,22 @@
-var x =document.getElementById("num1").value;
-var y =document.getElementById("num2").value;
-var c = x+y;
-alert("The sum of "+x+" and " +y +" is:  ",c );
-document.write(x);
+function calc() {
+    var x =parseInt(document.getElementById("num1").value);
+    var y =parseInt(document.getElementById("num2").value);
+    const op=document.getElementById("op").value;
+    var c;
+    switch (op) {
+        case '+':
+            c = x+y;
+            break;
+        case '-':
+            c=x-y;
+            break;
+        case '*':
+            c=x*y;
+            break;
+        case '/':
+            c=(x/y).toFixed();
+            break;
+        default:
+    }
+    parseInt(document.getElementById("result").value) = c;
+}

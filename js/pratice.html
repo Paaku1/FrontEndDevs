@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <div >
         Enter First Number : <br>
-        <input type="text" id="num1" name="TextBox1">
+        <input id="num1">
         <br>
         Enter Second Number : <br>
-        <input type="text" id="num2" name="TextBox2">
-        <br>
+        <input id="num2"><br>
+        Enter Operation ( + , - , * , / ):<br>
+        <input id="op"><br><br>
+        <input type="button" name="click" value="Display Result" onclick="calc()"><BR><br>
         Result : <br>
-        <input type="text" id="result" name="TextBox3">
+        <input id="result">
         <br>
-    <input type="button" name="click" value="Display Result" onclick="sum()">
     </div>
 </body>
-<script type="text/javascript">
-    function sum() {
-    var x =parseInt(document.getElementById("num1").value);
-    var y =parseInt(document.getElementById("num2").value);
-    var c = x+y;
-    document.getElementById("result").innerHTML = c;
-    }
+<script src = cons_loops.js>
 </script>
 <noscript>Please enable JavaScript to view the</noscript>
 </html>
