@@ -14,9 +14,9 @@ function calc() {
             c=x*y;
             break;
         case '/':
-            c=(x/y).toFixed();
+            c=(x/y);
             break;
         default:
     }
-    parseInt(document.getElementById("result").value) = c;
+    (document.getElementById("result").value) = c;
 }
