@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-# FrontEndDevs
-Me a Beginner For Full Stack Development 
-Hope you don't mind about my learning
-Thank you
-=======
 # Front-End Development Learning Repository
 
 Welcome to my personal learning repository for front-end development! This repository is designed to help me track my progress and showcase the skills I am learning in the field of front-end web development. Feel free to explore the code and resources I've collected here.
