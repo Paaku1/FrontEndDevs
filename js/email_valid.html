@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+    *{
+        text-align: center;
+    }
+    input{
+        width : 300px;
+    }
+    .true{
+        font-size: xx-large;
+        background: green;
+        width: 300px;
+        align-items: center;
+    }
+    .false{
+        background-color: red;
+    }
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+<body>
+    <h1>Email Validation</h1>
+    <p>Enter Email ID</p>
+    <span >
+        <input id="email" placeholder="Email" ><br><br>
+        <button id="submit" type="button" onclick="valid()">Submit</button>
+    </span>
+    <p class="true" id="result_t"></p>
+    <p class="false" id="result_f"></p>
+</body>
+<script>
+    function valid(){
+        document.getElementById('result_t').innerHTML=''
+        document.getElementById('result_f').innerHTML=''
+        var email = document.getElementById("email").value;
+        var res = check(email);
+        if (res == true){
+            document.getElementById('result_t').innerHTML='Valid';
+        }
+        else{
+            document.getElementById('result_f').innerHTML='Invalid';
+        }
+    }
+    function check(a){
+        var x = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(a.match(x)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+</script>
+</html>
