@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
-    *{
+    body{
         text-align: center;
+        background-color: aquamarine;
     }
     input{
+        background-color: aliceblue;
+        text-align: left;
         width : 300px;
+        height: 20px;
     }
     .true{
+        margin-left: 590px;
+        text-align: center;
         font-size: xx-large;
         background: green;
         width: 300px;
-        align-items: center;
+        font-family:monospace;
     }
     .false{
-        background-color: red;
+        margin-left: 590px;
+        text-align: center;
+        font-size: xx-large;
+        background: red;
+        width: 300px;
+        font-family:monospace;
     }
-
+    .center{
+        text-align: center;
+    }
     </style>
 <head>
     <meta charset="UTF-8">
@@ -24,19 +37,24 @@
     <title>Email Validation</title>
 </head>
 <body>
-    <h1>Email Validation</h1>
-    <p>Enter Email ID</p>
-    <span >
-        <input id="email" placeholder="Email" ><br><br>
-        <button id="submit" type="button" onclick="valid()">Submit</button>
+    <span class="body">
+        <h1>Email Validation</h1>
+        <p style="font-size: larger;">Enter Email ID</p>
+        <input id="email" placeholder="Enter your email id" ><br><br>
+        <button id="submit" type="button" onclick="valid()" style="background-color: orange;">Submit</button><br>
     </span>
-    <p class="true" id="result_t"></p>
-    <p class="false" id="result_f"></p>
+    <div class="center">
+        <p class="true" id="result_t">VALID</p>
+        <p id="remove">OR</p>
+        <p class="false" id="result_f">INVALID</p>
+    </div>
+    
 </body>
 <script>
     function valid(){
-        document.getElementById('result_t').innerHTML=''
-        document.getElementById('result_f').innerHTML=''
+        document.getElementById('result_t').innerHTML='';
+        document.getElementById('remove').innerHTML='';
+        document.getElementById('result_f').innerHTML='';
         var email = document.getElementById("email").value;
         var res = check(email);
         if (res == true){
