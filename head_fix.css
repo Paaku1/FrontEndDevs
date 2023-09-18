@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #85c5c1;
+}
+
+.sticky-header {
+    background-color: #7c5959;
+    color: #a3d6dc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 100;
+}
+
+.content {
+    padding: 100px;
+}
