@@ -1,4 +1,3 @@
-
 window.addEventListener("scroll", () => {
     const header = document.querySelector(".sticky-header");
     
