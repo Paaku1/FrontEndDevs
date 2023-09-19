@@ -25,6 +25,7 @@ Here are some of the key technologies and tools I'll be using in this repository
 - CSS3
 - JavaScript
 - React
+- Node
 - Angular
 - Vue.js
 - Bootstrap
