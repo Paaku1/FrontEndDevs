@@ -11,6 +11,7 @@ export const Alert = ({ children, onClose }: Props) => {
     <>
       <div className="alert alert-primary alert-dismissible" onClick={onClose}>
         {children}
+        
         <button
           type="button"
           className="btn-close"
