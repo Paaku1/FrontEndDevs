@@ -28,7 +28,6 @@ Here are some of the key technologies and tools I'll be using in this repository
 - Node
 - vite
 - Angular
-- Vue.js
 - Bootstrap
 - Sass/SCSS
 - Webpack
