@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="mouseenter">welcome to Web Technology</p>
+    <p id="dblclick">double click</p>
+    <p id="hover">come to me daddy!!!</p>
+    <h1 id="focus">have mee red</h1>
+    <label>name: </label><input type="text" name="Name" placeholder="name here" />
+  </body>
+  <script>
+    $(document).ready(function () {
+      /*$("#mouseenter").mousedown(function () {
+        alert("You have entered the paragraph.");
+      });
+      $("#dblclick").dblclick(function () {
+        alert("Double clicked");
+      });
+      $("#hover").hhover(
+        function () {
+          alert("Ohh yes");
+        },
+        function () {
+          alert("good bye my darling");
+        }
+      );*/
+      $("input").focus(function () {
+        $("this").css("background-color", "green");
+      });
+    });
+  </script>
+</html>
